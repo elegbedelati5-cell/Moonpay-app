@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Sohn";
+  src: local("Sohn") url("../fonts/TestSohne-BuchKursiv-BF663d89cd3e887.otf")
+    format("opentype");
+}
+
+* {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Sohn, Arial, Helvetica, sans-serif;
+}
+
+.container {
+  @apply max-w-[1300px] mx-auto;
+}
+
+a {
+  @apply cursor-pointer;
+}
