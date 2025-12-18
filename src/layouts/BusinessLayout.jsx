@@ -1,15 +1,16 @@
 import { Outlet } from "react-router-dom";
 import GeneralFooter from "../components/GeneralFooter";
-import GeneralHeader from "../components/GeneralHeader";
+import BusinessHeader from "../components/BusinessHeader";
 
-const GeneralLayout = () => {
+
+const BusinessLayout = () => {
   return (
     <div className="">
-      <GeneralHeader />
+      <BusinessHeader />
       <Outlet />
       <GeneralFooter />
     </div>
   ); 
 };
 
-export default GeneralLayout;
+export default BusinessLayout;
