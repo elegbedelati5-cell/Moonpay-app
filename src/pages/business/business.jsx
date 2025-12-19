@@ -1,3 +1,4 @@
+import BusinessSectionFive from "./BusinessSectionFive"
 import BusinessSectionFour from "./BusinessSectionFour"
 import BusinessSectionOne from "./BusinessSectionOne"
 import BusinessSectionThree from "./BusinessSectionThree"
@@ -10,6 +11,7 @@ const BusinessPage= () => {
             <BusinessSectionTwo/>
             <BusinessSectionThree/>
             <BusinessSectionFour/>
+            <BusinessSectionFive/>
          </div>
        )
 }

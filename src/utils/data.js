@@ -26,7 +26,7 @@ export const logo = [
 export const image=[
   {img: "/images/image-6.png"},
   {img: "/images/edge.svg"},
-  {img: "/public/images/MetaMask.svg"},
+  {img: "/images/MetaMask.svg"},
   {img: "/images/lobster.svg"},
   {img: "/images/phantom.svg"},
   {img: "/images/trust.svg"},
@@ -95,3 +95,46 @@ export const reviews =
         text:"Everything was great while using the app to purchase Bitcoin and send the tokens to my wallet. I'll continue to use the MoonPay app in the future."
       }
     ]      
+
+ export const businessReviews = [
+   {
+     name:"Chris K",
+     text:"MoonPay is so easy to purchase btc and are available to help. Highly recommended!! And you can use it in Canada!!"
+    },
+    {
+      name:"Lavinia Tanirau",
+      text:"This platform is the best for buying tokens it is so easy and straightforward no confusion and most of all the delivery of your tokens to your wallet is the fastest 👍"
+    },
+    {
+      name:"Bekono",
+      text:"Apart from the cost that was a bit higher than some competitors, the service as excellent, which, sometimes, matters more than anything else"
+    },
+    {
+      name:"Alex Henderson",
+      text:"The experience was fast and easy. Card options available help out a ton making MoonPay a real option for purchase of crypto currency."
+    },
+   {
+     name:"QSI",
+     text:"Excellent. Exact and fast. 2-5 minutes and XLM’s were in my account. Also appreciated the security that you went through to open the account!"
+   },
+   {
+     name: "Justin Troupe",
+     text: "Was an amazing experience. Was all over and completed in a matter of seconds thank you."
+   },
+   {
+     name: "C. Boyer",
+     text: "The experience was easy to use and really easy to understand for someone who first time buying bitcoin."
+    },
+    {
+      name:"Ally Auzad",
+      text:"It's too early to say as it was my first transaction. However, everything proceeded smoothly."
+    },
+      {
+        name:"Julia Elaine Mathis",
+        text: "I am very pleased and satisfied with the timely service that I received to handle my business. I will continue to use MoonPay for future transactions."
+      },
+      {
+        name:"Darryl Nathaniel Robinson",
+        text:"My four year old could have figured it out folks. It was that easy. Super easy to navigate. Very intuitive. Had my Bitcoin before I even knew what I was gonna do with it."
+      },
+ ]   

@@ -33,7 +33,7 @@ const IndexSectionEight = () => {
               <div className="bg-[#000000] rounded-2xl p-2 gap-4 lg:flex hidden border border-[#F0EEF3] items-center justify-between">
                 <p className="text-white text-sm font-semibold max-w-1/3">Download the MoonPay App</p>
                 <img
-                  src="/public/images/app-download-qr-code.svg"
+                  src="/images/app-download-qr-code.svg"
                   alt=""
                   className="h-60 rounded-xl"
                 />
