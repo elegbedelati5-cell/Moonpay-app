@@ -116,7 +116,7 @@ const GeneralHeader = () => {
               Individuals
             </Link>
             <Link
-              to="/"
+              to="/business"
               className="text-black/90 text-sm bg-[#d7d5d5] p-2 rounded-[10px]"
             >
               Business

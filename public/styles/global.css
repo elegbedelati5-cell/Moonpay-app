@@ -86,6 +86,10 @@ a {
   animation: reviewScroll 65s linear infinite;
 }
 
+.review {
+  animation: scrollReview 65s linear infinite;
+}
+
 @keyframes scrollReview {
   0% {
     transform: translateX(-50%); 
@@ -95,9 +99,8 @@ a {
   }
 }
 
-.review {
-  animation: scrollReview 65s linear infinite;
-}
+
+
 
 @keyframes gradientShift {
   0% { background-position: 0% 20%; }

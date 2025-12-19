@@ -43,7 +43,7 @@ const GeneralFooter = () => {
     <div className="bg-black lg:py-20 py-14">
       <div className="container flex flex-col lg:px-0 px-5">
         <div>
-          <img src="/public/images/logo-white.png" alt="" className="h-5" />
+          <img src="/images/logo-white.png" alt="" className="h-5" />
         </div>
 
          <div className="flex lg:hidden lg:pt-10 pt-5">

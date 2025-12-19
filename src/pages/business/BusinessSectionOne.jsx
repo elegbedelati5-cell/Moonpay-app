@@ -16,7 +16,7 @@ const BusinessSectionOne = () => {
             </div>
          </div>
          <div className="flex flex-2/3">
-            <img src="/public/images/Group.png" alt="" className="lg:h-[600px] w-[1800px]"/>
+            <img src="/images/Group.png" alt="" className="lg:h-[600px] w-[1800px]"/>
          </div>
         </div>
           <div className="ticker-container">

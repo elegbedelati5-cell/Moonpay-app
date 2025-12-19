@@ -17,7 +17,7 @@ const IndexSectionSix = () => {
         <div className="w-full lg:min-h-[700px] min-h-[360px] bg-black text-white overflow-hidden lg:rounded-[50px] rounded-[20px] ">
           {/* Video / Background */}
           <video
-            src="/public/videos/Moon_Web_GlobeVideo-COMPRESSED.webm"
+            src="/videos/Moon_Web_GlobeVideo-COMPRESSED.webm"
             autoPlay
             loop
             muted
@@ -26,7 +26,7 @@ const IndexSectionSix = () => {
         </div>
         <div className=" relative container w-full lg:min-h-[750px] min-h-[400px] bg-black text-white overflow-hidden lg:-mt-0 -mt-32 mb-10 lg:rounded-[50px] rounded-[20px]">
           <video
-            src="/public/videos/Moon_Web_LeadVideo-Overlay-1920x1080-v1-RC.webm"
+            src="/videos/Moon_Web_LeadVideo-Overlay-1920x1080-v1-RC.webm"
             autoPlay
             loop
             muted
