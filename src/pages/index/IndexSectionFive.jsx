@@ -2,7 +2,7 @@ import { newsStories } from "../../utils/data";
 
 const IndexSectionFive = () => {
   return (
-    <div className=" container flex py-28 lg:px-0 px-4">
+    <div className="container flex py-28 lg:px-0 px-4">
       <div className="flex lg:flex-row flex-col w-full justify-between lg:gap-0 gap-2 ">
         {newsStories.map((element) => (
           <div
