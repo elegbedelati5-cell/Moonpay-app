@@ -5,6 +5,9 @@ import GeneralLayout from "./layouts/GeneralLayout";
 import HomePage from "./pages/index/index";
 import BusinessPage from "./pages/business/business";
 import BusinessLayout from "./layouts/BusinessLayout";
+import RampsPage from "./pages/ramps/ramps";
+import RampsLayout from "./layouts/RampsLayout";
+
 
 function App() {
   return (
@@ -25,6 +28,9 @@ function App() {
           </Route>
           <Route element={<BusinessLayout />}>
             <Route path="/business" element={<BusinessPage/>} />
+          </Route>
+          <Route element={<RampsLayout/>}>
+           <Route path="/ramps" element={<RampsPage/>}/>
           </Route> 
         </Routes>
       </BrowserRouter>

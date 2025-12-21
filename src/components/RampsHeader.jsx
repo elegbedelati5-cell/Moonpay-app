@@ -4,7 +4,7 @@ import { IoIosArrowDown, IoIosArrowUp, IoIosClose } from "react-icons/io";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
-const BusinessHeader = () => {
+const RampsHeader = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
 
@@ -22,10 +22,10 @@ const BusinessHeader = () => {
   return (
     <div className="w-screen py-5 bg-[#F9F8FB] shadow-sm ">
       {/* Desktop navbar */}
-      <div className="container lg:flex items-center justify-between hidden">
+      <div className="containerr lg:flex items-center justify-between hidden">
         {/* Left side */}
         <div className="flex items-center gap-8">
-          <img src="/images/logo-coloured.png" alt="" className="h-7" />
+          <img src="/images/blacklogo.png" alt="" className="h-7"/>
 
           <div className="flex gap-4 items-center">
             <Link to="/" className="text-[#7C7C7D]">
@@ -301,5 +301,4 @@ const BusinessHeader = () => {
     </div>
   );
 };
-export default BusinessHeader;
-
+export default RampsHeader;

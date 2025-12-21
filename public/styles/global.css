@@ -19,6 +19,10 @@ body {
   @apply max-w-[1050px] mx-auto;
 }
 
+.containerr{
+ @apply max-w-[1150px] mx-auto;
+}
+
 a {
   @apply cursor-pointer;
 }
