@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import GeneralFooter from "../components/GeneralFooter";
-import GeneralHeader from "../components/GeneralHeader";
+import GeneralHeader from "../components/generalheader/GeneralHeader";
 
 const GeneralLayout = () => {
   return (

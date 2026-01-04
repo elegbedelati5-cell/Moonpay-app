@@ -1,11 +1,11 @@
 const IndexSectionEight = () => {
   return (
-      <div className="relative w-full lg:h-[850px] h-[600px]">
+      <div className="relative w-full lg:h-[850px] md:h-[500px] h-[600px]">
         <div className="absolute inset-0 animate-gradient bg-gradient-to-r from-[#7626c2] via-[#ebd0e6] to-[#e05312]"></div>
 
         <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
             <div className="lg:px-0 px-4">
-          <div className="bg-[#F9F8FB] container rounded-4xl lg:p-20 py-28 px-2 flex flex-col gap-4 border border-[#F0EEF3] ">
+          <div className="bg-[#F9F8FB] container rounded-4xl lg:p-20 md:px-24 md:py-28 py-28 px-2 flex flex-col gap-4 border border-[#F0EEF3] ">
             <div className="flex flex-row items-center justify-center gap-3">
               <div className="flex gap-2">
                 <img

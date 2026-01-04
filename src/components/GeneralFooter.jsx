@@ -58,7 +58,7 @@ const GeneralFooter = () => {
           </Link>
 
           
-              <div className="flex lg:hidden flex-col w-screen max-w-[350px] gap-1">
+              <div className="flex lg:hidden md:hidden flex-col w-screen max-w-[350px] gap-1">
             <div className="flex gap-2 items-center">
                 <input
                   onChange={(event) => setemail(event.target.value)}
@@ -77,7 +77,7 @@ const GeneralFooter = () => {
               {emailerrors && <div className="">{emailerrors}</div>}
             </div>
 
-            <div className="flex lg:hidden flex-col gap-1 pt-5">
+            <div className="flex lg:hidden md:hidden flex-col gap-1 pt-5">
               <div className="flex gap-4">
                 <input
                   // onClick={handleCheckBox}
@@ -91,7 +91,7 @@ const GeneralFooter = () => {
             </div>
           
 
-        <div className="grid lg:grid-cols-4 grid-cols-1 py-10 lg:gap-5 gap-7 text-[#626262]">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 py-10 lg:gap-5 gap-7 text-[#626262]">
           <div className="col-span-1 flex flex-col">
             <h1 className="text-white font-semibold text-[16px]">Personal</h1>
             <div className="py-5 flex flex-col gap-5 text-[13px] font-semibold">
@@ -307,7 +307,7 @@ const GeneralFooter = () => {
         </div>
         <div className="flex lg:flex-row flex-col gap-8 lg:gap-0 items-center justify-between">
           <div className="flex flex-col gap-5 w-screen">
-            <div className="flex lg:gap-16 gap-8 lg:text-white text-[#696767]">
+            <div className="flex md:px-5 lg:gap-16 gap-8 lg:text-white text-[#696767]">
               <AiFillFacebook size={25} />
               <FaXTwitter size={25}  />
               <FaLinkedin size={25} />
@@ -315,7 +315,7 @@ const GeneralFooter = () => {
               <FaYoutube size={25}  />
             </div>
 
-              <div className="lg:flex hidden flex-col w-screen max-w-[450px] gap-1">
+              <div className="lg:flex md:flex md:px-5 hidden flex-col w-screen max-w-[450px] gap-1">
             <div className="flex gap-4 items-center pt-5">
                 <input
                   onChange={(event) => setemail(event.target.value)}
@@ -334,7 +334,7 @@ const GeneralFooter = () => {
               {emailerrors && <div className="">{emailerrors}</div>}
             </div>
 
-            <div className="lg:flex hidden flex-col gap-1">
+            <div className="lg:flex md:flex md:px-5 hidden flex-col gap-1">
               <div className="flex gap-4">
                 <input
                   // onClick={handleCheckBox}
@@ -356,7 +356,7 @@ const GeneralFooter = () => {
           </Link>
           <div className="flex gap-2">
           <Link><img src="/images/app-store-en.png" alt="" className="lg:h-9 h-10 lg:w-[200px]" /></Link>
-          <Link><img src="/public/images/google-play-en.png" alt="" className="lg:h-9 h-10 lg:w-[200px]"/></Link>
+          <Link><img src="/images/google-play-en.png" alt="" className="lg:h-9 h-10 lg:w-[200px]"/></Link>
           </div>
         </div>
         </div>

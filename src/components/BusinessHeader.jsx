@@ -20,7 +20,7 @@ const BusinessHeader = () => {
     setShowMenu(!showMenu);
   };
   return (
-    <div className="w-screen py-5 bg-[#F9F8FB] shadow-sm ">
+    <div className="w-screen py-5 bg-[#F9F8FB] shadow-sm">
       {/* Desktop navbar */}
       <div className="container lg:flex items-center justify-between hidden">
         {/* Left side */}
@@ -68,26 +68,16 @@ const BusinessHeader = () => {
             <Link to="/ramps" className="flex flex-col gap-2 col-span-1">
               <div className="border-t-[1px] border-[#D4D4D4] w-full mx-auto"></div>
               <div className="flex items-center justify-between hover:text-purple-500">
-                <span className="font-bold text-[16px]">On Ramps </span>
+                <span className="font-bold text-[16px]">Ramps </span>
                 <IoArrowForwardCircleOutline size={30} />
               </div>
               <p className="text-[16px] text-[#797D85]">
+                A fast way to let users buy and sell crypto, increase revenue, and drive retention - all with payment and minimal code. 
                 Let your consumers buy crpto within your app or website using
                 local fiat payment method.
               </p>
             </Link>
 
-            <Link to="/ramps" className="flex flex-col gap-2 col-span-1">
-              <div className="border-t-[1px] border-[#D4D4D4] w-full mx-auto"></div>
-              <div className="flex items-center justify-between hover:text-purple-500">
-                <span className="font-bold text-[16px]">Off Ramps </span>
-                <IoArrowForwardCircleOutline size={30} />
-              </div>
-              <p className="text-[16px] text-[#797D85]">
-                A lighting fast way to sell crypto, increase revenue and reduce
-                customer attrition - all with a few lines of code.
-              </p>
-            </Link>
 
             <Link className="flex flex-col gap-2 col-span-1">
               <div className="border-t-[1px] border-[#D4D4D4] w-full mx-auto"></div>
@@ -124,17 +114,17 @@ const BusinessHeader = () => {
               </p>
             </Link>
 
-            <Link className="flex flex-col gap-2 col-span-1">
+ <Link className="flex flex-col gap-2 col-span-1">
               <div className="border-t-[1px] border-[#D4D4D4] w-full mx-auto"></div>
               <div className="flex items-center justify-between hover:text-purple-500">
-                <span className="font-bold text-[16px]">Otherlife </span>
+                <span className="font-bold text-[16px]">Issuance</span>
                 <IoArrowForwardCircleOutline size={30} />
               </div>
               <p className="text-[16px] text-[#797D85]">
-                Award winning Web3 Agency supporting our patners with ideation,
-                strategy, communication marketing and Frontend Development.
+               A regulated platform to build, launch, and scale your own branded stablecoin.
               </p>
             </Link>
+
 
             <Link className="flex flex-col gap-2 col-span-1">
               <div className="border-t-[1px] border-[#D4D4D4] w-full mx-auto"></div>
@@ -146,6 +136,18 @@ const BusinessHeader = () => {
                 Stableicon payment infrastructure offering APIs for global
                 on/off rampings, wallets and virual accounts built for
                 developers.
+              </p>
+            </Link>
+
+            <Link className="flex flex-col gap-2 col-span-1">
+              <div className="border-t-[1px] border-[#D4D4D4] w-full mx-auto"></div>
+              <div className="flex items-center justify-between hover:text-purple-500">
+                <span className="font-bold text-[16px]">Otherlife </span>
+                <IoArrowForwardCircleOutline size={30} />
+              </div>
+              <p className="text-[16px] text-[#797D85]">
+                Award winning Web3 Agency supporting our patners with ideation,
+                strategy, communication marketing and Frontend Development.
               </p>
             </Link>
           </div>
@@ -204,29 +206,19 @@ const BusinessHeader = () => {
               )}
             </div>
 
-            {showMenu && (
+            {showMobileMenu && (
               <div className="flex flex-col gap-6 mt-3 w-full h-full overflow-y-auto pb-5">
-                <Link className="flex flex-col gap-2">
+                <Link to="/ramps" className="flex flex-col gap-2">
                   <div className="flex items-center justify-between hover:text-purple-500">
-                    <span className="font-bold text-[16px]">On Ramps </span>
+                    <span className="font-bold text-[16px]">Ramps </span>
                     <IoArrowForwardCircleOutline size={30} />
                   </div>
                   <p className="text-[16px] text-[#797D85]">
-                    Let your consumers buy crpto within your app or website
-                    using local fiat payment method.
+                    A fast way to let users buy and sell crypto, increase revenue, and drive retention - all with payment and minimal code. 
                   </p>
                 </Link>
-                <div className="border-t-[1px] border-[#D4D4D4] w-full mx-auto"></div>
-                <Link className="flex flex-col gap-2">
-                  <div className="flex items-center justify-between hover:text-purple-500">
-                    <span className="font-bold text-[16px]">Off Ramps </span>
-                    <IoArrowForwardCircleOutline size={30} />
-                  </div>
-                  <p className="text-[16px] text-[#797D85]">
-                    A lighting fast way to sell crypto, increase revenue and
-                    reduce customer attrition - all with a few lines of code.
-                  </p>
-                </Link>
+                
+
                 <div className="border-t-[1px] border-[#D4D4D4] w-full mx-auto"></div>
                 <Link className="flex flex-col gap-2">
                   <div className="flex items-center justify-between hover:text-purple-500">
@@ -238,6 +230,7 @@ const BusinessHeader = () => {
                     fees.
                   </p>
                 </Link>
+                
                 <div className="border-t-[1px] border-[#D4D4D4] w-full mx-auto"></div>
                 <Link className="flex flex-col gap-2">
                   <div className="flex items-center justify-between hover:text-purple-500">
@@ -263,18 +256,18 @@ const BusinessHeader = () => {
                     stable coin settlements _ all through Moonpay.
                   </p>
                 </Link>
+
                 <div className="border-t-[1px] border-[#D4D4D4] w-full mx-auto"></div>
-                <Link className="flex flex-col gap-2">
+                <Link to="/ramps" className="flex flex-col gap-2">
                   <div className="flex items-center justify-between hover:text-purple-500">
-                    <span className="font-bold text-[16px]">Otherlife </span>
+                    <span className="font-bold text-[16px]">Issuance </span>
                     <IoArrowForwardCircleOutline size={30} />
                   </div>
                   <p className="text-[16px] text-[#797D85]">
-                    Award winning Web3 Agency supporting our patners with
-                    ideation, strategy, communication marketing and Frontend
-                    Development.
+                    A regulated platform to build, launch, and scale your own branded stablecoin.
                   </p>
                 </Link>
+
                 <div className="border-t-[1px] border-[#D4D4D4] w-full mx-auto"></div>
                 <Link className="flex flex-col gap-2">
                   <div className="flex items-center justify-between hover:text-purple-500">
@@ -285,6 +278,19 @@ const BusinessHeader = () => {
                     Stableicon payment infrastructure offering APIs for global
                     on/off rampings, wallets and virual accounts built for
                     developers.
+                  </p>
+                </Link>
+
+                <div className="border-t-[1px] border-[#D4D4D4] w-full mx-auto"></div>
+                <Link className="flex flex-col gap-2">
+                  <div className="flex items-center justify-between hover:text-purple-500">
+                    <span className="font-bold text-[16px]">Otherlife </span>
+                    <IoArrowForwardCircleOutline size={30} />
+                  </div>
+                  <p className="text-[16px] text-[#797D85]">
+                    Award winning Web3 Agency supporting our patners with
+                    ideation, strategy, communication marketing and Frontend
+                    Development.
                   </p>
                 </Link>
               </div>

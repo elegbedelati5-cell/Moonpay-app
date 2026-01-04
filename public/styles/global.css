@@ -103,9 +103,6 @@ a {
   }
 }
 
-
-
-
 @keyframes gradientShift {
   0% { background-position: 0% 20%; }
   50% { background-position: 100% 20%; }
@@ -126,13 +123,16 @@ a {
   margin: 40px auto;
 }
 
-
-
-.timer {
-  background: linear-gradient(90deg, #6c5ce7, #a29bfe);
-  color: white;
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-weight: bold;
+@keyframes reviews{
+  0% {
+    transform: translateX(0); 
+  }
+  100% {
+    transform: translateX(-50%); 
+  }
 }
-/* ... other styles for currency rows, inputs, and button ... */
+
+.reviews {
+  animation: reviews 15s linear infinite;
+}
+ 

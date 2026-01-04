@@ -34,30 +34,30 @@ const BusinessSectionFour = () => {
   };
   return (
     <div className="flex flex-col gap-20">
-      <div className="flex flex-col container items-center justify-center gap-20">
+      <div className="flex flex-col container items-center justify-center md:gap-14 gap-20 px-5 lg:px-0">
         <div className="flex flex-col items-center  gap-7 text-center">
-          <h2 className="text-4xl tracking-tighter px-64">
+          <h2 className="lg:text-4xl text-2xl tracking-tighter lg:px-64">
             <b>Crypto was designed to go beyond borders</b>
           </h2>
-          <p className="text-lg text-[#555555] px-56">
+          <p className="text-lg text-[#555555] lg:px-56">
             And our on-ramp is no exception. We can help your wallet operate in
             more places around the world.
           </p>
         </div>
-        <div className="flex items-center justify-evenly gap-10">
-          <div className="bg-[#EFF3F9] flex flex-col rounded-2xl px-7 py-14 border-[1px] border-[#c9c7c7] items-center justify-center hover:bg-white hover:shadow-2xl">
-            <h2 className="text-[64px] text-[#7715F5] font-semibold">30+</h2>
-            <p className="">Supported Fiat Currencies</p>
+        <div className="flex lg:flex-row md:flex-col flex-col items-center justify-evenly lg:gap-10 gap-5">
+          <div className="bg-[#EFF3F9] flex flex-col rounded-2xl md:p-20 px-7 py-14 border-[1px] border-[#c9c7c7] items-center justify-center hover:bg-white hover:shadow-2xl">
+            <h2 className="text-[64px] md:text-8xl text-[#7715F5] font-semibold">30+</h2>
+            <p className="md:text-lg">Supported Fiat Currencies</p>
           </div>
 
-          <div className="bg-[#EFF3F9] flex flex-col rounded-2xl px-6 py-14 border-[1px] border-[#c9c7c7] items-center justify-center">
-            <h2 className="text-[64px] text-[#7715F5] font-semibold">110+</h2>
-            <p className="">Supported Cryptocurrencies</p>
+          <div className="bg-[#EFF3F9] flex flex-col rounded-2xl md:p-20 px-6 py-14 border-[1px] border-[#c9c7c7] items-center justify-center hover:bg-white hover:shadow-2xl">
+            <h2 className="text-[64px] md:text-8xl text-[#7715F5] font-semibold">110+</h2>
+            <p className="md:text-lg">Supported Cryptocurrencies</p>
           </div>
 
-          <div className="bg-[#EFF3F9] flex flex-col rounded-2xl px-12 py-14 border-[1px] border-[#c9c7c7] items-center justify-center">
-            <h2 className="text-[64px] text-[#7715F5] font-semibold">160+</h2>
-            <p className="">Supported Countries</p>
+          <div className="bg-[#EFF3F9] flex flex-col rounded-2xl md:p-20 px-12 py-14 border-[1px] border-[#c9c7c7] items-center justify-center hover:bg-white hover:shadow-2xl">
+            <h2 className="text-[64px] md:text-8xl text-[#7715F5] font-semibold">160+</h2>
+            <p className="md:text-lg">Supported Countries</p>
           </div>
         </div>
       </div>
@@ -67,7 +67,7 @@ const BusinessSectionFour = () => {
             className="relative h-full bg-cover bg-center shadow-inner"
             style={{ backgroundImage: "url('/images/360_F.jpg')" }}
           >
-            <div className="absolute inset-0 flex flex-col gap-5 lg:top-72 top-1/3 lg:left-1/2 left-1/3 transform lg:-translate-x-1/2 -translate-x-1/4 lg:-translate-y-1/2 -translate-y-1/4 text-white text-center drop-shadow-lg z-10">
+            <div className="absolute inset-0 flex flex-col items-center justify-center gap-5 lg:top-72 top-1/3 lg:left-1/2 left-1/3 transform lg:-translate-x-1/2 -translate-x-1/4 lg:-translate-y-1/2 -translate-y-1/4 text-white text-center drop-shadow-lg z-10">
               <h3 className="font-semibold text-3xl">
                 Learn more about our products
               </h3>
@@ -75,24 +75,25 @@ const BusinessSectionFour = () => {
                 Tell us more about your project, and we'll help you with your
                 crypto onramp and offramp needs
               </p>
-            </div>
-            <button className="absolute flex top-80 items-center justify-center py-3 mt-5 mx-[555px] bg-white rounded-lg text-black px-5 cursor-pointer">
+               <button className=" py-3 mt-5 bg-white rounded-lg text-black px-5 cursor-pointer">
               Talk to us
             </button>
+            </div>
+           
           </div>
         </div>
       </div>
 
       <div className="flex flex-col items-center justify-center">
-        <div className="flex flex-col items-center justify-center font-semibold gap-7">
+        <div className="flex flex-col items-center justify-center font-semibold gap-7 lg:px-0 px-5">
           <span className="text-2xl">Testimonials</span>
-          <h2 className="text-4xl">Hear from our partners</h2>
+          <h2 className="text-4xl lg:text-left text-center">Hear from our partners</h2>
         </div>
         {showBitcoinPage && (
-          <div className="grid grid-cols-2 justify-center items-center pt-32 pr-32 gap-10 px-5">
-            <div className=" col-span-1 w-[510px] px-10 pt-20 h-[400px] rounded-2xl bg-gradient-to-b from-0% to-100% from-[#f7f4f6] to-[#7d3abc] flex flex-col">
+          <div className="grid lg:grid-cols-2 grid-cols-1 justify-center items-center pt-20 lg:pt-32 lg:pr-32 gap-10 px-5">
+            <div className=" col-span-1 lg:w-[510px] md:w-full w-[350px] px-10 pt-20 lg:h-[400px] md:h-[470px] h-[300px] rounded-2xl bg-gradient-to-b from-0% to-100% from-[#f7f4f6] to-[#7d3abc] flex flex-col">
               {hovered && (
-                <div className="bg-white rounded-t-2xl flex flex-col mx-10 gap-3 px-6 py-3 h-[40%] w-[80%]">
+                <div className="bg-white rounded-t-2xl flex flex-col mx-10 gap-3 px-6 py-3 lg:h-[40%] h-[50%] w-[80%]">
                   <span>Revenue</span>
                   <div className="flex items-center justify-between">
                     <div className="flex gap-0">
@@ -113,7 +114,7 @@ const BusinessSectionFour = () => {
                 onMouseEnter={handleOpenHover}
                 onMouseLeave={handleCloseHover}
                 className={`transition-all duration-300 h-full flex items-center justify-center relative${
-                  hovered ? "scale-125 blur-xs" : "scale-100"
+                  hovered ? "lg:scale-125 blur-xs" : "scale-100"
                 }`}
               />
             </div>
@@ -145,8 +146,8 @@ const BusinessSectionFour = () => {
         )}
 
         {showPhantomPage && (
-          <div className="grid grid-cols-2 justify-center items-center pt-32 pr-32 gap-10 px-5">
-            <div className=" col-span-1 w-[510px] px-10 pt-20 h-[400px] rounded-2xl bg-gradient-to-b from-0% to-100% from-[#f7f4f6] to-[#7d3abc] flex flex-col">
+          <div className="grid lg:grid-cols-2 grid-cols-1 justify-center items-center lg:pt-32 pt-20 lg:pr-32 gap-10 px-5">
+            <div className="col-span-1 lg:w-[510px] md:w-full w-[350px] px-10 pt-20 lg:h-[400px] md:h-[470px] h-[300px] rounded-2xl bg-gradient-to-b from-0% to-100% from-[#f7f4f6] to-[#7d3abc] flex flex-col">
               {hovered && (
                 <div className="bg-white rounded-t-2xl flex flex-col mx-10 gap-3 px-6 py-3 h-[40%] w-[80%]">
                   <span>Revenue</span>
@@ -169,7 +170,7 @@ const BusinessSectionFour = () => {
                 onMouseEnter={handleOpenHover}
                 onMouseLeave={handleCloseHover}
                 className={`transition-all duration-300 h-full flex items-center justify-center relative${
-                  hovered ? "scale-125 blur-xs" : "scale-100"
+                  hovered ? "lg:scale-125 blur-xs" : "scale-100"
                 }`}
               />
             </div>
@@ -198,8 +199,8 @@ const BusinessSectionFour = () => {
         )}
 
         {showLedgerPage && (
-          <div className="grid grid-cols-2 justify-center items-center pt-32 pr-32 gap-10 px-5">
-            <div className=" col-span-1 w-[510px] px-10 pt-20 h-[400px] rounded-2xl bg-gradient-to-b from-0% to-100% from-[#f7f4f6] to-[#7d3abc] flex flex-col">
+          <div className="grid lg:grid-cols-2 grid-cols-1 justify-center items-center lg:pt-32 pt-20 lg:pr-32 gap-10 px-5">
+            <div className=" col-span-1 lg:w-[510px] md:w-full w-[350px] px-10 pt-20 lg:h-[400px] md:h-[470px] h-[300px] rounded-2xl bg-gradient-to-b from-0% to-100% from-[#f7f4f6] to-[#7d3abc] flex flex-col">
               {hovered && (
                 <div className="bg-white rounded-t-2xl flex flex-col mx-10 gap-3 px-6 py-3 h-[40%] w-[80%]">
                   <span>Revenue</span>
@@ -221,7 +222,7 @@ const BusinessSectionFour = () => {
                 alt=""
                 onMouseEnter={handleOpenHover}
                 onMouseLeave={handleCloseHover}
-                className={`transition-all duration-300 h-full flex items-center justify-center relative${
+                className={`transition-all duration-300 h-full md:h-[500px] flex items-center justify-center relative${
                   hovered ? "scale-125 blur-xs" : "scale-100"
                 }`}
               />
@@ -238,7 +239,7 @@ const BusinessSectionFour = () => {
               </p>
               <div className="flex items-center gap-4">
                 <img
-                  src="/public/images/t1u.webp"
+                  src="/images/t1u.webp"
                   alt=""
                   className="h-14 rounded-full"
                 />
@@ -250,39 +251,30 @@ const BusinessSectionFour = () => {
 
         <div className="grid grid-cols-3 gap-5 mt-6 px-5">
           <button
-            onClick={() => {
-              console.log("Bitcoin clicked");
-              handleShowBitcoinPage();
-            }}
-            className={`col-span-1 bg-[#EFF3F9] px-32 py-10 rounded-2xl ${
+            onClick={handleShowBitcoinPage}
+            className={`col-span-1 bg-[#EFF3F9] px-3 py-1 md:px-20 md:py-10 lg:px-32 lg:py-10 rounded-2xl ${
               showBitcoinPage ? "border-2 border-[#7D00FF]" : "border-0 "
             }`}
           >
-            <img src="/images/image-6.png" alt="" className="" />
+            <img src="/images/image-6.png" alt="" className="lg:h-9 md:h-8 h-4" />
           </button>
 
           <button
-            onClick={() => {
-              console.log("phantom clicked");
-              handleShowPhantomPage();
-            }}
-            className={`col-span-1 bg-[#EFF3F9] px-32 py-10 rounded-2xl ${
+            onClick={handleShowPhantomPage}
+            className={`col-span-1 bg-[#EFF3F9] px-3 py-1 md:px-20 md:py-10 lg:px-32 lg:py-10 rounded-2xl ${
               showPhantomPage ? "border-2 border-[#7D00FF]": "border-0" 
             }`}
           >
-            <img src="/images/phantom.svg" alt="" className="" />
+            <img src="/images/phantom.svg" alt="" className="lg:h-9 md:h-9 h-4" />
           </button>
 
           <button
-            onClick={() => {
-              console.log("ledger clicked");
-              handleShowLedgerPage();
-            }}
-            className={`col-span-1 bg-[#EFF3F9] px-32 py-10 rounded-2xl ${
+            onClick={handleShowLedgerPage}
+            className={`col-span-1 bg-[#EFF3F9] px-3 py-1 md:px-20 md:py-10 lg:px-32 lg:py-10 rounded-2xl ${
               showLedgerPage ? "border-2 border-[#7D00FF]" : "border-0"
             }`}
           >
-            <img src="/images/ledger.svg" alt="" className="" />
+            <img src="/images/ledger.svg" alt="" className="lg:h-9 md:h-9 h-5" />
           </button>
         </div>
         <div></div>

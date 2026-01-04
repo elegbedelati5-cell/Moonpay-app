@@ -64,12 +64,12 @@ const BusinessSectionThree = () => {
             <img
               src="/images/node.svg"
               alt=""
-              className="absolute left-[350px] top-[175px]"
+              className="absolute left-[350px] top-[175px] md:left-[640px]"
             />
             <img
               src="/images/ios.png"
               alt=""
-              className="absolute top-[120px] left-[165px] h-28 "
+              className="absolute top-[120px] md:left-[350px] left-[165px] h-28 "
             />
             <img
               src="/images/react.svg"
@@ -100,10 +100,10 @@ const BusinessSectionThree = () => {
             <img
               src="/images/Dashboard.png"
               alt=""
-              className="absolute lg:px-10 px-5 lg:py-10 pt-10 lg:h-full h-[80%] w-full"
+              className="absolute lg:px-10 px-5 lg:py-10 pt-10 lg:h-full md:h-full h-[80%] w-full"
             />
           </div>
-          <div className="flex flex-col items-center justify-center lg:gap-10 gap-8 lg:px-10">
+          <div className="flex flex-col items-center justify-center md:pt-10 lg:gap-10 gap-8 lg:px-10">
             <p className="text-white lg:text-3xl text-2xl lg:px-28 px-20 text-center">
               You're <b className="text-[#B8FF9A]">always</b> in control with
               our dashboard
@@ -149,7 +149,7 @@ const BusinessSectionThree = () => {
           </div>
         </div>
         <div className="col-span-3 bg-[#EFF3F9] rounded-3xl flex flex-col border-[1px] border-[#c9c7c7]">
-          <img src="/public/images/Better_Approval_Rates__1_.png" alt="" />
+          <img src="/images/Better_Approval_Rates__1_.png" alt="" />
           <div className="py-10 px-28 flex flex-col gap-4 items-center justify-center">
             <span className="text-3xl tracking-tight">
               Built for <b className="text-[#7715F5]">better approval rates</b>

@@ -52,7 +52,7 @@ const BusinessSectionTwo = () => {
                 <button className="flex items-center justify-center gap-2 bg-[#7D00FF] text-white px-4 py-2 rounded-full cursor-pointer hover:bg-[#6007bf]">Copy <TbCopy /></button>
             </div>
         </div>
-        <img src="/images/stJ.svg" alt="" className="col-span-1 shadow-2xl rounded-2xl h-[450px]"/>
+        <img src="/images/stJ.svg" alt="" className="col-span-1 shadow-2xl rounded-2xl md:h-[730px] h-[450px]"/>
       </div>
     </div>
   );

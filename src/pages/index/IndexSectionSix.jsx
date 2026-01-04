@@ -14,7 +14,7 @@ const IndexSectionSix = () => {
         </span>
       </div>
       <div className="lg:px-0 px-4">
-        <div className="w-full lg:min-h-[700px] min-h-[360px] bg-black text-white overflow-hidden lg:rounded-[50px] rounded-[20px] ">
+        <div className="w-full lg:min-h-[700px] md:min-h-[550px] min-h-[360px] bg-black text-white overflow-hidden lg:rounded-[50px] rounded-[20px] ">
           {/* Video / Background */}
           <video
             src="/videos/Moon_Web_GlobeVideo-COMPRESSED.webm"
