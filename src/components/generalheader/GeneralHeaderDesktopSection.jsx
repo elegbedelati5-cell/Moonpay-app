@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { TbWorld } from "react-icons/tb";
 import { CgMenuGridO } from "react-icons/cg";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowForward, IoIosArrowRoundForward } from "react-icons/io";
 import { useState } from "react";
 import { SiBitcoinsv, SiCardano, SiDogecoin, SiPolygon } from "react-icons/si";
 
@@ -17,34 +17,58 @@ const GeneralHeaderDesktopSection = () => {
 
   const handleShowHoverBuyMenu = () => {
     setShowHoverBuyMenu(true);
+    setShowHoverSellMenu(false)
+    setShowHoverSwapMenu(false)
+    setShowHoverMenu(false)
   };
 
   const handleCloseHoverBuyMenu = () => {
     setShowHoverBuyMenu(false);
+    setShowHoverSellMenu(false)
+    setShowHoverSwapMenu(false)
+    setShowHoverMenu(false)
   };
 
   const handleShowHoverSellMenu = () => {
     setShowHoverSellMenu(true);
+    setShowHoverBuyMenu(false)
+    setShowHoverSwapMenu(false)
+    setShowHoverMenu(false)
   };
 
   const handleCloseHoverSellMenu = () => {
     setShowHoverSellMenu(false);
+    setShowHoverBuyMenu(false)
+    setShowHoverSwapMenu(false)
+    setShowHoverMenu(false)
   };
 
   const handleShowHoverSwapMenu = () => {
     setShowHoverSwapMenu(true);
+    setShowHoverSellMenu(false)
+    setShowHoverBuyMenu(false)
+    setShowHoverMenu(false)
   };
 
   const handleCloseHoverSwapMenu = () => {
     setShowHoverSwapMenu(false);
+    setShowHoverSellMenu(false)
+    setShowHoverBuyMenu(false)
+    setShowHoverMenu(false)
   };
 
   const handleShowHoverMenu = () => {
     setShowHoverMenu(true);
+    setShowHoverSellMenu(false)
+    setShowHoverSwapMenu(false)
+    setShowHoverBuyMenu(false)
   };
 
   const handleCloseHoverMenu = () => {
     setShowHoverMenu(false);
+    setShowHoverSellMenu(false)
+    setShowHoverSwapMenu(false)
+    setShowHoverBuyMenu(false)
   };
 
   const handleShowHoverCompanyMenu = () => {
@@ -75,9 +99,14 @@ const GeneralHeaderDesktopSection = () => {
     setShowHoverLearnMenu(false)
   }
    return (
-    <div className="w-screen lg:py-5 bg-[#F9F8FB] shadow-sm ">
+    <div className="w-screen  bg-[#F9F8FB] shadow-sm ">
+        <div className="flex sticky bg-[#D8C8FF] py-2 text-sm items-center justify-center">
+           <span>MoonPay has secured its New York Trust Charter</span>
+           <IoIosArrowRoundForward size={25}/>
+           <Link className="underline font-semibold">Learn More</Link>
+        </div>
       {/* Desktop navbar */}
-      <div className="container lg:flex items-center justify-between hidden">
+      <div className="container lg:py-5 lg:flex items-center justify-between hidden">
         {/* Left side */}
         <div className="flex items-center gap-8">
           <img src="/images/logo-coloured.png" alt="" className="h-7" />
@@ -95,28 +124,36 @@ const GeneralHeaderDesktopSection = () => {
             <Link
               to=""
               onMouseEnter={handleShowHoverBuyMenu}
-              className=" hover:text-black/50"
+               className={`flex items-center justify-between gap-5 ${
+                showHoverBuyMenu ? "text-black/50" : "text-black"
+              }`}
             >
               Buy
             </Link>
             <Link
               to=""
               onMouseEnter={handleShowHoverSellMenu}
-              className=" hover:text-black/50"
+               className={`flex items-center justify-between gap-5 ${
+                showHoverSellMenu ? "text-black/50" : "text-black"
+              }`}
             >
               Sell
             </Link>
             <Link
               to=""
               onMouseEnter={handleShowHoverSwapMenu}
-              className=" hover:text-black/50"
+               className={`flex items-center justify-between gap-5 ${
+                showHoverSwapMenu ? "text-black/50" : "text-black"
+              }`}
             >
               Swap
             </Link>
             <Link
               to=""
               onMouseEnter={handleShowHoverMenu}
-              className="hover:text-black/50"
+              className={`flex items-center justify-between gap-5 ${
+                showHoverMenu ? "text-black/50" : "text-black"
+              }`}
             >
               <CgMenuGridO size={22} />
             </Link>
@@ -247,7 +284,7 @@ const GeneralHeaderDesktopSection = () => {
             : "hidden"
         }
       >
-        <div className="bg-[#ffffff] w-[23%] px-9 text-white pt-6 rounded-2xl pb-20 border-[1px] border-[black]">
+        <div className="bg-[#ffffff] w-[23%] px-9 text-white pt-6 rounded-2xl pb-24 border-[1px] border-[black]">
           <Link
             to=""
             className="flex flex-col gap-5 text-black hover:text-black/50"
@@ -353,7 +390,7 @@ const GeneralHeaderDesktopSection = () => {
             : "hidden"
         }
       >
-        <div className="bg-[#ffffff] w-[23%] px-9 text-white pt-6 rounded-2xl pb-20 border-[1px] border-[black]">
+        <div className="bg-[#ffffff] w-[23%] px-9 text-white pt-6 rounded-2xl pb-24 border-[1px] border-[black]">
           <Link
             to=""
             className="flex flex-col gap-5 text-black hover:text-black/50"
@@ -681,6 +718,7 @@ const GeneralHeaderDesktopSection = () => {
                       <img src="/icons/crypto-stacking.svg" alt="" className="h-9" />
                       <h3 className="font-bold">Status</h3>
                     </Link>
+
                     <Link></Link>
                     <Link></Link>
                     <Link></Link>

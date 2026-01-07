@@ -42,10 +42,10 @@ const SellBitcoinSectionOne = () => {
       <div className="bg-white lg:py-24 py-12 flex flex-col gap-24 rounded-4xl">
         <div className="container grid lg:grid-cols-2 grid-cols-1 gap-10 ">
         <div className="col-span-1 flex flex-col gap-5 md:px-10 lg:px-0 px-3">
-            <div className="md:flex md:items-center md:justify-center">
+            <div className="flex md:items-center lg:justify-start md:justify-center">
               <img src="/icons/bitcoin.svg" alt="" className="h-10" />
             </div>
-            <h3 className="lg:text-5xl text-3xl md:tracking-tight md:text-center leading-tight font-semibold">
+            <h3 className="lg:text-[55px] text-3xl md:tracking-tight md:text-center lg:text-left leading-tight font-semibold">
               Sell Bitcoin for Fiat. Cash Out BTC in a Few Clicks
             </h3>
             <p className="font-semibold md:text-sm text-[#727272] tracking-tight">
@@ -55,7 +55,7 @@ const SellBitcoinSectionOne = () => {
               list below.
             </p>
             <div className="flex items-center gap-4 mt-5 lg:mt-6">
-              <div className="flex md:hidden gap-2 items-center">
+              <div className="lg:flex md:hidden gap-2 items-center">
                 <img
                   src="/images/apple.png"
                   alt=""
@@ -73,7 +73,7 @@ const SellBitcoinSectionOne = () => {
                 <h4 className="font-bold">4.5 ★ on Google Play</h4>
               </div>
             </div>
-            <div className="flex lg:flex-row md:flex-row md:justify-center flex-col py-4 gap-2 lg:items-center mt-3">
+            <div className="flex lg:flex-row md:flex-row md:justify-center lg:justify-start flex-col py-4 gap-2 lg:items-center mt-3">
               <button className="lg:px-5 px-7 lg:py-4 py-4 bg-black text-white rounded-xl lg:flex md:flex hidden">
                 Get Started
               </button>
