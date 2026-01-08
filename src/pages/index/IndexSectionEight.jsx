@@ -25,12 +25,12 @@ const IndexSectionEight = () => {
                 <h4 className="lg:font-semibold text-sm">4.5 ★ on Google Play</h4>
               </div>
             </div>
-            <div className="flex flex-col items-center justify-center gap-10 max">
+            <div className="flex flex-col items-center justify-center gap-10">
               <h1 className="text-black lg:text-6xl text-4xl font-semibold leading-tight lg:max-w-2/3 tracking-tighter ">
                 The future of money starts with you
               </h1>
               <button className="bg-black rounded-full text-white py-3 px-5 lg:hidden flex">Download the app</button>
-              <div className="bg-[#000000] rounded-2xl p-2 gap-4 lg:flex hidden border border-[#F0EEF3] items-center justify-between">
+              <div className="bg-[#000000] max-w- rounded-2xl p-2 lg:flex hidden border border-[#F0EEF3] items-center justify-between">
                 <p className="text-white text-sm font-semibold max-w-1/3">Download the MoonPay App</p>
                 <img
                   src="/images/app-download-qr-code.svg"

@@ -1,9 +1,8 @@
 import { useRef, useState } from "react";
-import { IoIosPause } from "react-icons/io";
+import { IoIosPause, IoIosPlay } from "react-icons/io";
 
 const IndexSectionTwo = () => {
-
-     const videoRef = useRef(null);
+  const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(true);
 
   const togglePlay = () => {
