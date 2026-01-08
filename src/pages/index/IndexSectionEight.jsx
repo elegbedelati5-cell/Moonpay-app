@@ -5,9 +5,9 @@ const IndexSectionEight = () => {
 
         <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
             <div className="lg:px-0 px-4">
-          <div className="bg-[#F9F8FB] container rounded-4xl lg:p-20 md:px-24 md:py-28 py-28 px-2 flex flex-col gap-4 border border-[#F0EEF3] ">
+          <div className="bg-[#F9F8FB] container rounded-4xl lg:p-20 md:px-24 md:py-28 py-20 px-2 flex flex-col gap-4 border border-[#F0EEF3] ">
             <div className="flex flex-row items-center justify-center gap-3">
-              <div className="flex gap-2">
+              <div className="flex gap-2 md:hidden">
                 <img
                   src="/images/blackapple.png"
                   alt=""
@@ -15,8 +15,8 @@ const IndexSectionEight = () => {
                 />
                 <h4 className="lg:font-semibold text-sm">4.4 ★ on App Store</h4>
               </div>
-              <div className="border-l-[1px] border-[#D4D4D4] h-[30px] flex"></div>
-              <div className="flex gap-2 ">
+              <div className="border-l-[1px] border-[#D4D4D4] h-[30px] lg:flex hidden"></div>
+              <div className="lg:flex md:flex hidden gap-2 ">
                 <img
                   src="/images/playstore.png"
                   alt=""

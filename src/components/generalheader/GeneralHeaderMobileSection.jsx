@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { TbWorld } from "react-icons/tb";
 import { CgMenuGridO } from "react-icons/cg";
-import { IoIosArrowBack, IoIosArrowForward, IoIosClose } from "react-icons/io";
+import { IoIosArrowBack, IoIosArrowForward, IoIosArrowRoundForward, IoIosClose } from "react-icons/io";
 import { useState } from "react";
 import { SiBitcoinsv, SiCardano, SiDogecoin, SiPolygon } from "react-icons/si";
 
@@ -50,8 +50,13 @@ const GeneralHeaderMobileSection = () => {
     setShowHoverMobileSupportMenu(!showHoverMobileSupportMenu)
   }
   return (
-    <div className="w-screen py-5 lg:py-0 bg-[#F9F8FB] shadow-sm ">
-      <div className="flex lg:hidden items-center justify-between lg:px-0 px-5">
+    <div className="w-screen lg:py-0 bg-[#F9F8FB] shadow-sm ">
+      <div className="lg:hidden md:hidden flex bg-[#D8C8FF] px-5 py-2 text-[10px] items-center justify-center">
+                   <span>MoonPay has secured its New York Trust Charter</span>
+                   <IoIosArrowRoundForward size={20}/>
+                   <Link className="underline font-semibold">Learn More</Link>
+      </div>
+      <div className="flex lg:hidden py-5 items-center justify-between lg:px-0 px-5">
         <img src="/images/blacklogo.png" alt="" className="h-6" />
         <CgMenuGridO size={25} onClick={handleShowMobileMenu} />
       </div>

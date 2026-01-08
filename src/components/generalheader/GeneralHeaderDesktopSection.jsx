@@ -100,7 +100,7 @@ const GeneralHeaderDesktopSection = () => {
   }
    return (
     <div className="w-screen  bg-[#F9F8FB] shadow-sm ">
-        <div className="flex sticky bg-[#D8C8FF] py-2 text-sm items-center justify-center">
+        <div className="lg:flex md:flex hidden bg-[#D8C8FF] py-2 text-sm items-center justify-center">
            <span>MoonPay has secured its New York Trust Charter</span>
            <IoIosArrowRoundForward size={25}/>
            <Link className="underline font-semibold">Learn More</Link>
